@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
-import { useMediaQuery } from '@mui/material';
+import { InputLabel, useMediaQuery } from '@mui/material';
 import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
@@ -108,26 +108,25 @@ export default function SignIn() {
             <TextField
               margin="normal"
               required
-              
+              placeholder='Email'
               id="email"
-              label="Email Address"
               name="email"
-              autoComplete="email"
               sx={{
-                backgroundColor: '#fff',
+                
                 width:'50%'
               }}
-              autoFocus
+              variant="standard"
+          
             />
+            
             <TextField
               margin="normal"
               required
             
               name="password"
-              label="Password"
+              placeholder="Password"
               type={showPassword ? 'text' : 'password'}
-              id="password"
-              autoComplete="current-password"
+              variant="standard"
               InputProps={{
                 endAdornment: (
                   <InputAdornment position="end">
@@ -143,7 +142,7 @@ export default function SignIn() {
                 ),
               }}
               sx={{
-                backgroundColor: '#fff', width:'50%'
+               width:'50%'
               }}
             />
 

@@ -201,15 +201,15 @@ export default function SignUp() {
             }}>
             <TextField
               required
-              
+              variant='standard'
               id="name"
-              label="Name"
+              placeholder="Name"
               name="name"
               autoComplete="name"
               margin='normal'
               size="small"
               sx={{
-                backgroundColor: '#fff',
+               
                 width:'40%'
               }}
               autoFocus
@@ -221,15 +221,15 @@ export default function SignUp() {
             )}
             <TextField
               required
-              
+              variant='standard'
               id="email"
-              label="Email Address"
+              placeholder="Email Address"
               name="email"
-              autoComplete="email"
+             
               margin='normal'
               size="small"
               sx={{
-                backgroundColor: '#fff',
+                
                 width:'40%'
               }}
               autoFocus
@@ -241,13 +241,13 @@ export default function SignUp() {
             )}
             <TextField
               required
-              
+              variant='standard'
               name="password"
-              label="Password"
+              placeholder="Password"
               type={showPassword ? 'text' : 'password'}
               id="password"
               autoComplete="current-password"
-              margin='normal'
+            
               size="small"
               InputProps={{
                 endAdornment: (
@@ -264,15 +264,15 @@ export default function SignUp() {
                 ),
               }}
               sx={{
-                backgroundColor: '#fff',
+               
                 width:'40%'
               }}
             />
             <TextField
               required
-              
+              variant='standard'
               name="Cpassword"
-              label="Confirm Password"
+              placeholder="Confirm Password"
               type={showCPassword ? 'text' : 'password'}
               id="Cpassword"
               autoComplete="current-password"
@@ -293,7 +293,7 @@ export default function SignUp() {
                 ),
               }}
               sx={{
-                backgroundColor: '#fff',
+             
                 width:'40%'
               }}
             />
