@@ -1,0 +1,61 @@
+/* Toggle.css */
+.react-toggle {
+    touch-action: none;
+  }
+  
+  .react-toggle-screenreader-only {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clippath: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .react-toggle--disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+  }
+  
+  .react-toggle-track {
+    background: #666;
+    border: 1px solid #333;
+  }
+  
+  .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background: #888;
+  }
+  
+  .react-toggle--checked .react-toggle-track {
+    background: #4cae4c;
+  }
+  
+  .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+    background: #5cb85c;
+  }
+  
+  .react-toggle-track-check {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .react-toggle-thumb {
+    border: 1px solid #333;
+    background: #fff;
+  }
+  
+  .react-toggle--checked .react-toggle-thumb {
+    border: 1px solid #4cae4c;
+    background: #4cae4c;
+  }
+  
